@@ -7,14 +7,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="accounts" />
+<<<<<<< HEAD
         <module name="cards" />
+=======
+>>>>>>> bb3aeff664f90e79e4ab5bc6bcf2096c53ad5fee
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="accounts" options="-parameters" />
+<<<<<<< HEAD
       <module name="cards" options="-parameters" />
+=======
+>>>>>>> bb3aeff664f90e79e4ab5bc6bcf2096c53ad5fee
     </option>
   </component>
 </project>
