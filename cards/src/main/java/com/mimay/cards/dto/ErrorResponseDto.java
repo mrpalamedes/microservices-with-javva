@@ -2,6 +2,8 @@ package com.mimay.cards.dto;
 
 import java.time.LocalDateTime;
 
+import org.springframework.http.HttpStatus;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -10,7 +12,7 @@ public class ErrorResponseDto {
 
     private String apiPath;
 
-    private String errorCode;
+    private HttpStatus errorCode;
 
     private String errorMessage;
 
