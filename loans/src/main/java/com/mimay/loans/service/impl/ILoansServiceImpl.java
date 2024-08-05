@@ -2,12 +2,18 @@ package com.mimay.loans.service.impl;
 import java.util.Optional;
 import java.util.Random;
 
+import org.springframework.stereotype.Service;
+
 import com.mimay.loans.constant.LoansConstant;
 import com.mimay.loans.entity.Loans;
 import com.mimay.loans.exception.LoanAlreadyExistsException;
 import com.mimay.loans.repository.LoansRepository;
 import com.mimay.loans.service.ILoansService;
 
+import lombok.AllArgsConstructor;
+
+@Service
+@AllArgsConstructor
 public class ILoansServiceImpl implements ILoansService{
 
     private LoansRepository loansRepository;
