@@ -1,0 +1,40 @@
+services:
+  accounts:
+    image: "mrpalamedes/accounts:v1"
+    container_name: accounts-ms
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 700M
+    networks:
+      - mimay
+  
+  loans:
+    image: "mrpalamedes/loans:v1"
+    container_name: loans-ms
+    ports:
+      - "8090:8090"
+    deploy:
+      resources:
+        limits:
+          memory: 700M
+    networks:
+      - mimay
+  
+  cards:
+    image: "mrpalamedes/cards:v1"
+    container_name: cards-ms
+    ports:
+      - "9000:9000"
+    deploy:
+      resources:
+        limits:
+          memory: 700M
+    networks:
+      - mimay
+
+networks:
+  mimay:
+    driver: "bridge"
