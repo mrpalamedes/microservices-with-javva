@@ -1,0 +1,11 @@
+build:
+    version: "1.0"
+
+loans:
+    message: "Welcome to Loans Microservice related prod APIs"
+    contactDetails:
+        name: "orang prod - Product Owner"
+        email: "prod_team@microservice.com"
+    onCallSupport:
+        - 1234567890
+        - 9876543210

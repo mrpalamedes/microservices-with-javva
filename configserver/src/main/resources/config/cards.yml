@@ -1,0 +1,11 @@
+build:
+    version: "3.0"
+
+cards:
+    message: "Welcome to Cards Microservice local APIs"
+    contactDetails:
+        name: "Mimay"
+        email: "fachritaufann@gmail.com"
+    onCallSupport:
+        - 1234567890
+        - 9876543210

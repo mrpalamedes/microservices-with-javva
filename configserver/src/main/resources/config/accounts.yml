@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to Accounts Microservice local APIs"
+  contactDetails:
+    name: "mimay"
+    email: "fachritaufann@gmail.com"
+  onCallSupport:
+    - 1234567890
+    - 1234567890

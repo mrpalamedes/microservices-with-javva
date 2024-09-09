@@ -1,0 +1,11 @@
+build:
+    version: "2.0"
+
+loans:
+    message: "Welcome to Loans Microservice related QA APIs"
+    contactDetails:
+        name: "orang qa - QA Lead"
+        email: "qa_team@microservice.com"
+    onCallSupport:
+        - 1234567890
+        - 9876543210
