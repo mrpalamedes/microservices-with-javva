@@ -1,8 +1,10 @@
-# spring.application.name=loans
-
 server:
     port: 8090
 spring:
+    application:
+        name: "loans"
+    profiles:  
+        active: "prod"
     datasource:
         url: jdbc:h2:mem:testdb
         driverClassName: org.h2.Driver
@@ -16,3 +18,5 @@ spring:
         hibernate:
             ddl-auto: create
         show-sql: true
+    config:
+        import: "optional:configserver:http://localhost:8071/"
