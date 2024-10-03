@@ -5,7 +5,7 @@ accounts:
   message: "Welcome to Accounts Microservice related prod APIs"
   contactDetails:
     name: "orang prod - Product Owner"
-    email: "prod_team@microservice.com"
+    email: "{cipher}fe87515c03c08d7b0262f9dc85648c1c915d7889252a0706d9ef619dfb41d7687bd8bd499bfb9968c8ce3cd7c84d6f5b"
   onCallSupport:
     - 1234567890
     - 1234567890
