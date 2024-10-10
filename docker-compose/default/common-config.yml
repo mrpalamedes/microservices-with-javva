@@ -1,0 +1,22 @@
+services:
+  network-deploy-services:
+    networks:
+      - mimay
+
+  microservice-base-config:
+    extends:
+      service: network-deploy-services
+    deploy:
+      resources:
+        limits:
+          memory: 700M
+
+  microservice-configserver-config:
+    extends:
+      service: microservice-base-config
+    depends_on:
+      rabbit:
+        condition: service_healthy
+      environment:
+        SPRING_PROFILES_ACTIVE: default
+        SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071/"
